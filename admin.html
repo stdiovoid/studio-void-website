@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a12">
+  <title>مدیریت | STUDIO VOID</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="mark">V</span> STUDIO <b>VOID</b></a>
+    <div class="top-actions"><span class="local-status"><i></i> حالت آزمایشی محلی</span><a href="index.html" target="_blank" rel="noopener">مشاهده سایت ↗</a></div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="side-title">مدیریت وب‌سایت</div>
+      <button class="nav-item active" data-tab="general">◫ <span>محتوای اصلی</span></button>
+      <button class="nav-item" data-tab="services">✳ <span>خدمات</span></button>
+      <button class="nav-item" data-tab="projects">◇ <span>پروژه‌ها</span></button>
+      <button class="nav-item" data-tab="social">↗ <span>راه‌های ارتباطی</span></button>
+      <div class="sidebar-note">نسخه ۱.۰<br>STUDIO VOID CMS</div>
+    </aside>
+    <main class="main">
+      <div class="page-heading"><div><div class="eyebrow">CONTENT MANAGEMENT</div><h1>پنل مدیریت</h1><p>محتوای وب‌سایت STUDIO VOID را ویرایش کن.</p></div><button class="save-button" id="save-all">ذخیره تغییرات</button></div>
+      <div class="notice"><b>توجه:</b> در این نسخه اطلاعات فقط در حافظه مرورگر همین دستگاه ذخیره می‌شوند. برای انتشار تغییرات برای همه کاربران، در مرحله بعد دیتابیس و اتصال امن را اضافه می‌کنیم.</div>
+
+      <section class="panel-section active" id="tab-general">
+        <div class="section-head"><div><h2>محتوای صفحه اصلی</h2><p>عنوان‌ها و متن‌های اصلی سایت را ویرایش کن.</p></div></div>
+        <div class="form-grid">
+          <label>عنوان اصلی فارسی<input id="heroTitle" placeholder="ایده‌ها را به تجربه‌های واقعی تبدیل می‌کنیم."></label>
+          <label>متن معرفی فارسی<textarea id="heroDescription" rows="3"></textarea></label>
+          <label>عنوان بخش درباره ما<input id="aboutTitle"></label>
+          <label>متن درباره ما<textarea id="aboutDescription" rows="4"></textarea></label>
+          <label>عنوان بخش تماس<input id="contactTitle"></label>
+          <label>متن بخش تماس<textarea id="contactDescription" rows="3"></textarea></label>
+        </div>
+      </section>
+
+      <section class="panel-section" id="tab-services">
+        <div class="section-head"><div><h2>مدیریت خدمات</h2><p>عنوان و توضیح چهار خدمت اصلی را تغییر بده.</p></div></div>
+        <div id="services-list" class="item-list"></div>
+      </section>
+
+      <section class="panel-section" id="tab-projects">
+        <div class="section-head"><div><h2>پروژه‌ها</h2><p>فعلاً اطلاعات معرفی پروژه‌ی منتخب را ویرایش کن.</p></div></div>
+        <div class="form-grid">
+          <label>عنوان پروژه<input id="projectTitle"></label>
+          <label>توضیحات پروژه<textarea id="projectDescription" rows="4"></textarea></label>
+          <label>برچسب پروژه<input id="projectTag"></label>
+        </div>
+      </section>
+
+      <section class="panel-section" id="tab-social">
+        <div class="section-head"><div><h2>راه‌های ارتباطی</h2><p>آدرس لینک‌ها را وارد کن تا دکمه‌های سایت به مقصد مستقیم بروند.</p></div></div>
+        <div class="form-grid">
+          <label>لینک تلگرام<input id="telegramUrl" type="url" dir="ltr"></label>
+          <label>لینک روبیکا<input id="rubikaUrl" type="url" dir="ltr"></label>
+        </div>
+      </section>
+      <div class="bottom-actions"><button class="secondary-button" id="reset-defaults">بازگردانی مقادیر اولیه</button><span id="save-message" role="status"></span></div>
+    </main>
+  </div>
+</body>
+</html>
