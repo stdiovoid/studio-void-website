@@ -2,19 +2,39 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#080d18"><title>STUDIO VOID | استودیو وُید</title>
+<meta name="theme-color" content="#080d18">
+<meta name="description" content="STUDIO VOID — Independent Digital Studio">
+<title>STUDIO VOID | استودیو وُید</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="announcement" class="announcement" hidden><span id="announcementText"></span><button id="closeAnnouncement" aria-label="بستن">×</button></div>
-<header class="topbar"><a class="brand" href="#"><span class="brand-mark">V</span><span>STUDIO <b>VOID</b></span></a>
-<nav><a href="#about">درباره ما</a><a href="#services">خدمات</a><a href="#projects">پروژه‌ها</a><a href="#contact">ارتباط</a></nav>
-<div class="actions"><button id="languageToggle" class="ghost">EN</button><a class="button small" href="admin.html">مدیریت</a></div></header>
+<div id="announcement" class="announcement" hidden><div><strong id="announcementTitle"></strong><span id="announcementText"></span></div><button id="closeAnnouncement" aria-label="Close">×</button></div>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">V</span><span>STUDIO <b>VOID</b></span></a>
+  <nav><a href="#about" data-i18n="navAbout">درباره ما</a><a href="#services" data-i18n="navServices">خدمات</a><a href="#projects" data-i18n="navProjects">پروژه‌ها</a><a href="#contact" data-i18n="navContact">ارتباط</a></nav>
+  <div class="actions"><button id="languageToggle" class="ghost" type="button">EN</button></div>
+</header>
 <main>
-<section class="hero"><div class="hero-glow"></div><p class="eyebrow">INDEPENDENT DIGITAL STUDIO</p><h1>ایده‌ها را به <span>تجربه‌های دیجیتال</span> تبدیل می‌کنیم.</h1><p class="lead">استودیو VOID در زمینه طراحی وب‌سایت، توسعه نرم‌افزار، بازی و راهکارهای هوش مصنوعی فعالیت می‌کند.</p><a class="button" href="#projects">مشاهده پروژه‌ها <span>↙</span></a></section>
-<section id="about" class="section intro"><p class="eyebrow">01 / ABOUT</p><h2>ساختن، آزمایش‌کردن، <span>فراتر رفتن.</span></h2><p>ما روی ایده‌هایی کار می‌کنیم که با طراحی دقیق و فناوری روز، به محصولاتی کاربردی تبدیل می‌شوند.</p></section>
-<section id="services" class="section"><p class="eyebrow">02 / SERVICES</p><h2>حوزه‌های فعالیت</h2><div class="service-grid"><article>01 <h3>طراحی وب‌سایت</h3><p>وب‌سایت‌های مدرن، سریع و واکنش‌گرا.</p></article><article>02 <h3>توسعه بازی</h3><p>تجربه‌های تعاملی دوبعدی و سه‌بعدی.</p></article><article>03 <h3>اپلیکیشن و نرم‌افزار</h3><p>محصولات دیجیتال برای نیازهای واقعی.</p></article><article>04 <h3>هوش مصنوعی و ربات</h3><p>ابزارهای هوشمند و اتوماسیون.</p></article></div></section>
-<section id="projects" class="section"><div class="section-head"><div><p class="eyebrow">03 / SELECTED WORK</p><h2>پروژه‌های ما</h2></div><span id="projectCount" class="muted"></span></div><div id="filters" class="filters"></div><div id="projectsGrid" class="project-grid"></div><p id="emptyProjects" class="muted" hidden>هنوز پروژه‌ای ثبت نشده است.</p></section>
-<section id="contact" class="section contact"><p class="eyebrow">04 / CONTACT</p><h2>بیایید چیزی <span>بسازیم.</span></h2><p>برای همکاری و دریافت اطلاعات بیشتر از راه‌های ارتباطی رسمی با ما در تماس باشید.</p><div class="socials"><a href="https://t.me/stdiovoid" target="_blank" rel="noopener">Telegram ↗</a><a href="https://rubika.ir/Studivoid" target="_blank" rel="noopener">Rubika ↗</a></div></section>
-</main><footer>© <span id="year"></span> STUDIO VOID — ساخته‌شده برای آینده.</footer>
-<script src="script.js"></script></body></html>
+<section class="hero">
+  <div class="hero-glow"></div><p class="eyebrow">INDEPENDENT DIGITAL STUDIO</p>
+  <h1 data-i18n="heroTitle">ایده‌ها را به <span>تجربه‌های دیجیتال</span> تبدیل می‌کنیم.</h1>
+  <p class="lead" data-i18n="heroLead">استودیو VOID در زمینه طراحی وب‌سایت، توسعه نرم‌افزار، بازی و راهکارهای هوش مصنوعی فعالیت می‌کند.</p>
+  <a class="button" href="#projects"><span data-i18n="heroButton">مشاهده پروژه‌ها</span><span>↙</span></a>
+</section>
+<section id="about" class="section intro"><p class="eyebrow">01 / ABOUT</p><h2 data-i18n="aboutTitle">ساختن، آزمایش‌کردن، <span>فراتر رفتن.</span></h2><p data-i18n="aboutText">ما روی ایده‌هایی کار می‌کنیم که با طراحی دقیق و فناوری روز، به محصولاتی کاربردی تبدیل می‌شوند.</p></section>
+<section id="services" class="section"><p class="eyebrow">02 / SERVICES</p><h2 data-i18n="servicesTitle">حوزه‌های فعالیت</h2>
+<div class="service-grid">
+<article><span>01</span><h3 data-i18n="service1Title">طراحی وب‌سایت</h3><p data-i18n="service1Text">وب‌سایت‌های مدرن، سریع و واکنش‌گرا.</p></article>
+<article><span>02</span><h3 data-i18n="service2Title">توسعه بازی</h3><p data-i18n="service2Text">تجربه‌های تعاملی دوبعدی و سه‌بعدی.</p></article>
+<article><span>03</span><h3 data-i18n="service3Title">اپلیکیشن و نرم‌افزار</h3><p data-i18n="service3Text">محصولات دیجیتال برای نیازهای واقعی.</p></article>
+<article><span>04</span><h3 data-i18n="service4Title">هوش مصنوعی و ربات</h3><p data-i18n="service4Text">ابزارهای هوشمند و اتوماسیون.</p></article>
+</div></section>
+<section id="projects" class="section"><div class="section-head"><div><p class="eyebrow">03 / SELECTED WORK</p><h2 data-i18n="projectsTitle">پروژه‌های ما</h2></div><span id="projectCount" class="muted"></span></div><div id="filters" class="filters"></div><div id="projectsGrid" class="project-grid"></div><p id="emptyProjects" class="muted" hidden data-i18n="emptyProjects">هنوز پروژه‌ای منتشر نشده است.</p><p id="loadError" class="notice-error" hidden></p></section>
+<section id="contact" class="section contact"><p class="eyebrow">04 / CONTACT</p><h2 data-i18n="contactTitle">بیایید چیزی <span>بسازیم.</span></h2><p data-i18n="contactText">برای همکاری و دریافت اطلاعات بیشتر از راه‌های ارتباطی رسمی با ما در تماس باشید.</p><div class="socials"><a href="https://t.me/stdiovoid" target="_blank" rel="noopener">Telegram ↗</a><a href="https://rubika.ir/Studivoid" target="_blank" rel="noopener">Rubika ↗</a></div></section>
+</main><footer>© <span id="year"></span> STUDIO VOID — <span data-i18n="footerText">ساخته‌شده برای آینده.</span></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.2/dist/umd/supabase.js"></script>
+<script src="config.js"></script><script src="script.js"></script>
+</body></html>
